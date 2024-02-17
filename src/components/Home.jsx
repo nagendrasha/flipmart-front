@@ -12,7 +12,7 @@ const Home = () => {
 
   const apiData = async () => {
     try {
-      const datas = await axios.get('https://api.viaverosr.com/api/products');
+      const datas = await axios.get('https://2ndlappy.shop/api/products');
       // console.log(datas)
       if(datas.data.message=="Products Fetch Successfully"){
         setApi(datas.data.allproduct)
