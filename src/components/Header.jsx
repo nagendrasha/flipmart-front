@@ -16,8 +16,8 @@ const Header = () => {
                 <img src={logo} width={'60px'} height={'50px'} alt="logo" />
               </Grid>
               <Grid item lg={3}>
-                <Box sx={{ width:'300px',border:'1px solid red',bgcolor:'lightgray',display:'flex',justifyContent:'space-between',alignItems:'center',p:'0px 3px',borderRadius:'3px' }} >
-                  <InputBase placeholder='Enter Your keys' sx={{ fontSize:'14px' }} />
+                <Box sx={{ width:'300px',mt:'5px',height:'40px',border:'1px solid red',bgcolor:'lightgray',display:'flex',justifyContent:'space-between',alignItems:'center',p:'0px 3px',borderRadius:'5px' }} >
+                  <InputBase placeholder='Enter Your Keys' sx={{ fontSize:'14px' }} />
                   <SearchIcon sx={{fontSize:'24px',color:'gray'}}/>
                 </Box>
               </Grid>

@@ -25,14 +25,11 @@ const Home = () => {
   useEffect(() => {
     apiData()
   }, [])
-
-  console.log(api);
-
   return (
     <>
       <Header />
-      <Carosel />
-      <Typography variant='h4' sx={{ fontWeight: 'bold',mt:5,ml:5 }}>MEDAL WORTHY BRANDS TO BAG</Typography>
+      <Carosel/>
+      <Typography variant='h4' sx={{ fontWeight: 'bold',mt:5,ml:5 }}>Best Quality Laptops</Typography>
       <Grid container sx={{ mt: '0px', mb: '40px', ml: '20px' }}>
         {api.map((ele)=>{
           return (
@@ -57,6 +54,15 @@ const Home = () => {
             </Card>
           </Grid>
           )
+        })}
+      </Grid>
+
+      <Typography variant='h4' sx={{ fontWeight: 'bold',mt:5,ml:5 }}>Cheapest Smartphones</Typography>
+      <Grid container sx={{ mt: '0px', mb: '40px', ml: '20px' }}>
+        {api.filter((ele)=>{
+          if(ele.category=="phone"){
+            console.log(ele)
+          }
         })}
       </Grid>
       <Footer/>
