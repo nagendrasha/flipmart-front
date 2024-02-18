@@ -12,9 +12,9 @@ const Header = () => {
       <Box sx={{ flexGrow: 1, mb: '55px' }}>
         <AppBar sx={{ bgcolor: 'white' }}>
           <Toolbar>
-            <Grid container sx={{ display: 'flex', p: '10px' }}>
+            <Grid container sx={{ display: 'flex', p:{lg:'10px',sm:'5px'} }}>
               <Grid item lg={2}>
-                <img src={logo} width={'60px'} height={'50px'} alt="logo" style={{ marginRight:'10px' }} />
+                <img src={logo} width={'60px'} height={'50px'} alt="logo" style={{  marginRight:{lg:'10px',sm:'0px'} }} />
               </Grid>
               <Grid item lg={3}>
                 <Box sx={{ width:{lg:'300px',sm:'250px'} ,mt: '5px', height: '40px', border: '1px solid red', bgcolor: 'lightgray', display: 'flex', justifyContent: 'space-between', alignItems: 'center', p: '0px 3px', borderRadius: '5px' }} >
@@ -33,7 +33,7 @@ const Header = () => {
                 <Typography sx={{ color: 'black', fontSize: '12px', ml: '15px', textAlign: 'center' }}><FavoriteBorderIcon sx={{ color: 'black', fontSize: '20px' }} /> <br />Wishlist</Typography>
                 <Typography sx={{ color: 'black', fontSize: '12px', ml: '15px', textAlign: 'center' }}><ShoppingBagIcon sx={{ color: 'black', fontSize: '20px' }} /> <br />Cart</Typography>
               </Grid>
-              <Grid sx={{ display:{lg:'none',sm:'block'},marginLeft:'30px' }}>
+              <Grid sx={{ display:{lg:'none',sm:'block'},marginLeft:{lg:'30px',sm:'20px'} }}>
               <MobileMenu />
               </Grid>
             </Grid>
