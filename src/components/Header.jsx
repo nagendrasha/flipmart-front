@@ -33,7 +33,7 @@ const Header = () => {
                 <Typography sx={{ color: 'black', fontSize: '12px', ml: '15px', textAlign: 'center' }}><FavoriteBorderIcon sx={{ color: 'black', fontSize: '20px' }} /> <br />Wishlist</Typography>
                 <Typography sx={{ color: 'black', fontSize: '12px', ml: '15px', textAlign: 'center' }}><ShoppingBagIcon sx={{ color: 'black', fontSize: '20px' }} /> <br />Cart</Typography>
               </Grid>
-              <Grid sx={{ display:{lg:'none',sm:'block'},marginLeft:'40px' }}>
+              <Grid sx={{ display:{lg:'none',sm:'block'},marginLeft:'30px' }}>
               <MobileMenu />
               </Grid>
             </Grid>
