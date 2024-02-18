@@ -30,13 +30,13 @@ const Home = () => {
       <Header />
       <Carosel/>
       <Typography variant='h4' sx={{ fontWeight: 'bold',mt:5,ml:5 }}>Best Quality Laptops</Typography>
-      <Grid container sx={{ mt: '0px', mb: '40px', ml: '20px' }}>
+      <Grid container sx={{ mt: '0px', pl:{lg:'40px',sm:'0px',xs:'0px'}, mb: '40px',display:'flex',justifyContent:'space-evenly' }}>
         {api.map((ele)=>{
           return (
             <Grid item lg={3} sx={{ mt: 10 }}>
-            <Card sx={{ maxWidth: 300 }}>
+            <Card sx={{ maxWidth:{lg:300,sm:250,xs:250} }}>
               <CardMedia
-                sx={{ height: 300 }}
+                sx={{ height: {lg:300,sm:250,xs:250} }}
                 image={p1}
                 title="green iguana"
               />
